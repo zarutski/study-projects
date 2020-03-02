@@ -10,14 +10,13 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class PoolConnectionBuilder implements ConnectionBuilder{
+public class PoolConnectionBuilder implements ConnectionBuilder {
 
-    private static final Logger logger =
-            LoggerFactory.getLogger(PoolConnectionBuilder.class);
+    private static final Logger logger = LoggerFactory.getLogger(PoolConnectionBuilder.class);
 
     private DataSource dataSource;
 
-        public PoolConnectionBuilder() {
+    public PoolConnectionBuilder() {
         try {
             Context ctx = new InitialContext();
             dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/cityRegister");

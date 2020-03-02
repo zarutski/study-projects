@@ -17,8 +17,7 @@ import javax.ws.rs.core.MediaType;
 @Singleton
 public class CheckPersonService {
 
-    private static final Logger logger =
-            LoggerFactory.getLogger(CheckPersonService.class);
+    private static final Logger logger = LoggerFactory.getLogger(CheckPersonService.class);
 
     private PersonCheckDao dao;
 

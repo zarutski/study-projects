@@ -32,8 +32,7 @@ public class PersonCheckDao {
         return connectionBuilder.getConnection();
     }
 
-    public PersonResponse checkPerson(PersonRequest request)
-            throws PersonCheckException {
+    public PersonResponse checkPerson(PersonRequest request) throws PersonCheckException {
         PersonResponse response = new PersonResponse();
         String sql = SQL_REQUEST;
         boolean hasExtension = request.getExtension() != null;

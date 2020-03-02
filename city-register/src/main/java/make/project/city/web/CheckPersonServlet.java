@@ -20,8 +20,7 @@ import java.time.format.DateTimeFormatter;
 @WebServlet(name = "CheckPersonServlet", urlPatterns = {"/checkPerson"})
 public class CheckPersonServlet extends HttpServlet {
 
-    private static final Logger logger =
-            LoggerFactory.getLogger(CheckPersonServlet.class);
+    private static final Logger logger = LoggerFactory.getLogger(CheckPersonServlet.class);
 
     private PersonCheckDao dao;
 
