@@ -34,7 +34,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <postgres.version>42.2.9</postgres.version>
+        <postgres.version>42.2.25</postgres.version>
         <slf4j.version>1.7.30</slf4j.version>
         <jersey.version>2.30</jersey.version>
         <jaxb.version>2.3.1</jaxb.version>
